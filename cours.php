@@ -10,8 +10,9 @@
 <body>
 <?php
             require 'classes/utilisateur.class.php';
+            require 'classes/admin.class.php';
             
-            $pierre = new Utilisateur('Pierre', 'abcdef');
+            $pierre = new Admin('Pierre', 'abcdef');
             $mathilde = new Utilisateur('Math', 123456);
             
             echo $pierre->getNom(). '<br>';
