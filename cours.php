@@ -8,20 +8,14 @@
     <title>Objets PHP</title>
 </head>
 <body>
-    <?php
-        require "classes/utilisateur.class.php";
-
-        $pierre = new Utilisateur();
-        $mathilde = new Utilisateur();
-        
-        $pierre->setNom('Pierre');
-        $pierre->setPasse('abcdef');
-        
-        $mathilde->setNom('Math');
-        $mathilde->setPasse(123456);
-        
-        echo $pierre->getNom(). '<br>';
-        echo $mathilde->getNom(). '<br>';
-    ?>
+<?php
+            require 'classes/utilisateur.class.php';
+            
+            $pierre = new Utilisateur('Pierre', 'abcdef');
+            $mathilde = new Utilisateur('Math', 123456);
+            
+            echo $pierre->getNom(). '<br>';
+            echo $mathilde->getNom(). '<br>';
+        ?>
 </body>
 </html>
